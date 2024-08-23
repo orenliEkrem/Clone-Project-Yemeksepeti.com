@@ -13,6 +13,8 @@
     <style>
         div#header-container {
             width: 100%;
+            z-index: 1;
+            background: white;
         }
 
         #site-header {
@@ -67,6 +69,16 @@
             height: 19px;
         }
 
+        #main {
+            background-color: #f7f7f7;
+        }
+
+        #main-hero {
+            max-width: 1440px;
+            padding: 0 64px;
+
+        }
+
         #hero-img {
             max-height: 608px;
             min-height: 608px;
@@ -78,7 +90,7 @@
 
 <body>
 
-    <div id="header-container" class="d-flex m-0 p-0 text-center sticky-top">
+    <div id="header-container" class="shadow d-flex m-0 p-0 text-center sticky-top">
         <header id="site-header" class="container-fluid">
             <nav id="header-nav" class="navbar container-fluid d-flex navbar-expand p-0">
                 <a class="me-auto p-0 justify-content-center align-items-center" href=""><img id="site-logo"
@@ -96,7 +108,33 @@
         </header>
     </div>
 
+    <div id="main">
+        <div id="main-hero" class="container-fluid">
+            <div class="row m-0">
+                <div class="container col-lg-7 col-6 p-0 m-0 align-content-center">
+                    <div class="col">
+                        <h1 class="fs-40 fw-normal lh-base">Yemek ya da
+                            market, tüm ihtiyaçların kapında!</h1>
+                        <div class="p-3 rounded-4 w-auto bg-white shadow-sm">
+                            <div class="gap-3 d-flex position-relative">
+                                <input class="w-100 rounded-2 p-2 border border-light-subtle" type="search" name=""
+                                    id="" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1">
+                                <div class="d-flex position-absolute p-2 end-0 gap-2" style="margin-right: 15%;">
+                                    <span><img src="/wwwroot/images/target.png" alt=""></span>
+                                    <span class="fw-semibold p-1" style="font-size: 0.9rem;">Konumumu bul</span>
+                                </div>
+                                <button class="btn btn-danger">Keşfet</button>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-lg-5 col-6 p-0 m-0">
+                    <img id="hero-img" src="/wwwroot/images/hero-home.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
