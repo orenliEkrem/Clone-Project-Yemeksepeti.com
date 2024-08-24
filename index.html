@@ -56,7 +56,7 @@
             border-radius: 8px;
             font-size: 14px;
             font-weight: 600;
-            transition: all 0.1s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
 
         #nav-list li:hover,
@@ -69,7 +69,7 @@
             height: 19px;
         }
 
-        #main {
+        #main-hero-container {
             background-color: #f7f7f7;
         }
 
@@ -79,10 +79,50 @@
 
         }
 
+        #hero-left-col {
+            box-sizing: border-box;
+            margin-right: 1em;
+        }
+
         #hero-img {
             max-height: 608px;
             min-height: 608px;
             width: auto;
+        }
+
+        #partners-heading,
+        #partners-msg {
+            max-width: 1440px;
+            padding: 0 64px;
+        }
+
+        #partners-heading h2 {
+            margin: 5rem 0 2rem;
+        }
+
+        #partners-msg {
+            transform: translateY(-47%);
+        }
+
+        #partners-msg div a {
+            padding: 12px 16px;
+            color: white;
+        }
+
+        #partners-img {
+            object-fit: cover;
+            width: 100vw;
+            height: 404px;
+
+        }
+
+        #partners-link {
+            transition: all 0.2s ease-in-out;
+        }
+
+        #partners-link:hover {
+            transform: scale(1.1);
+            background-color: #CD0042;
         }
     </style>
 
@@ -109,28 +149,64 @@
     </div>
 
     <div id="main">
-        <div id="main-hero" class="container-fluid">
-            <div class="row m-0">
-                <div class="container col-lg-7 col-6 p-0 m-0 align-content-center">
-                    <div class="col">
-                        <h1 class="fs-40 fw-normal lh-base">Yemek ya da
-                            market, tüm ihtiyaçların kapında!</h1>
-                        <div class="p-3 rounded-4 w-auto bg-white shadow-sm">
-                            <div class="gap-3 d-flex position-relative">
-                                <input class="w-100 rounded-2 p-2 border border-light-subtle" type="search" name=""
-                                    id="" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1">
-                                <div class="d-flex position-absolute p-2 end-0 gap-2" style="margin-right: 15%;">
-                                    <span><img src="/wwwroot/images/target.png" alt=""></span>
-                                    <span class="fw-semibold p-1" style="font-size: 0.9rem;">Konumumu bul</span>
+        <div id="main-hero-container">
+            <section id="main-hero" class="container-fluid">
+                <div class="row m-0">
+                    <div id="hero-left-col" class="container col-lg-7 col-6 p-0 m-0 align-content-center">
+                        <div class="col">
+                            <h1 class="fs-40 fw-normal lh-base">Yemek ya da
+                                market, tüm ihtiyaçların kapında!</h1>
+                            <div class="p-3 rounded-4 w-auto bg-white shadow-sm mt-4">
+                                <div class="gap-3 d-flex position-relative">
+                                    <input class="w-100 rounded-2 p-2 border border-light-subtle" type="search" name=""
+                                        id="" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1">
+                                    <div class="d-flex position-absolute p-2 end-0 gap-2" style="margin-right: 15%;">
+                                        <span><img src="/wwwroot/images/target.png" alt=""></span>
+                                        <span class="fw-semibold p-1" style="font-size: 0.9rem;">Konumumu bul</span>
+                                    </div>
+                                    <button class="btn btn-danger">Keşfet</button>
                                 </div>
-                                <button class="btn btn-danger">Keşfet</button>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
+                    <div class="container col-lg-5 col-6 p-0 m-0">
+                        <img id="hero-img" src="/wwwroot/images/hero-home.webp" alt="">
+                    </div>
                 </div>
-                <div class="container col-lg-5 col-6 p-0 m-0">
-                    <img id="hero-img" src="/wwwroot/images/hero-home.webp" alt="">
+            </section>
+        </div>
+
+        <div class="p-0 w-100">
+            <div id="partners-heading" class="container-fluid">
+                <h2 class="fw-semibold">Restoran veya Mahalle esnafı iş ortağımız olun</h2>
+            </div>
+            <div>
+                <picture>
+                    <img id="partners-img" src="/wwwroot/images/home-vendor.jpg" alt="">
+                </picture>
+            </div>
+            <div id="partners-msg" class="container-fluid">
+                <div class="col-6 p-4 rounded-4 bg-white shadow">
+                    <p class="h4 fw-normal pb-3">Hemen katılın, Yemeksepeti ile satışlarınızı katlamaya başlayın</p>
+                    <p class="pb-3">Binlerce yeni kullanıcıya ulaşabilmek ister misiniz? Sadece kendi semtinizdekiler
+                        değil,
+                        artık çevre semtlerdeki binlerce kullanıcı da işletmenizden sipariş verebilecek. Bir ev,
+                        bir
+                        plaza, bir işyeri ya da üniversite kampüsü, hizmet vermek istediğiniz kim varsa artık
+                        müşteriniz.</p>
+
+                    <p class="pb-3">Gayet basit! Menünüzü listeliyoruz ve sipariş bilgilerini size ulaştırıyoruz.
+                        Sipariş
+                        teslimatını dilerseniz kendiniz yapabiliyorsunuz, dilerseniz Yemeksepeti sizin adınıza
+                        kullanıcıya ulaştırıyor.</p>
+
+                    <p class="pb-3">Hemen ailemize katılabilir ve muhteşem avantajlara sahip iş ortaklarımızdan biri
+                        olabilirsiniz.</p>
+
+                    <a id="partners-link" type="button"
+                        class="btn d-inline-block btn-danger text-white border-0 rounded text-decoration-none"
+                        href="http://">Başlayalım</a>
                 </div>
             </div>
         </div>
@@ -141,8 +217,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
