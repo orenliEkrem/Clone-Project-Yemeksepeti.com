@@ -91,7 +91,9 @@
         }
 
         #partners-heading,
-        #partners-msg {
+        #partners-msg,
+        #city-container,
+        #city-header {
             max-width: 1440px;
             padding: 0 64px;
         }
@@ -123,6 +125,22 @@
         #partners-link:hover {
             transform: scale(1.1);
             background-color: #CD0042;
+        }
+
+        .city-box {
+            width: 310px;
+        }
+
+        .city {
+            object-fit: cover;
+            height: 252px;
+            width: 310px;
+        }
+
+        .city-name {
+            border-radius: 8px;
+            color: #333333;
+            font-size: 18px;
         }
     </style>
 
@@ -177,7 +195,7 @@
             </section>
         </div>
 
-        <div class="p-0 w-100">
+        <section class="p-0 w-100">
             <div id="partners-heading" class="container-fluid">
                 <h2 class="fw-semibold">Restoran veya Mahalle esnafı iş ortağımız olun</h2>
             </div>
@@ -209,7 +227,84 @@
                         href="http://">Başlayalım</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="cities" class="p-0 w-100">
+            <div id="city-header" class="container-fluid">
+                <div>
+                    <div>
+                        <h2 style="margin-bottom: 32px;" class="fw-semibold">Türkiye'nin her şehrindeyiz!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div id="city-container" class="container-fluid">
+                <div class="row m-0 gap-4">
+                    <div class="col-3 p-0 city-box">
+                        <a href="" class="d-block position-relative ">
+                            <figure class="d-flex position-relative m-0">
+                                <picture>
+                                    <img class="img-fluid rounded-4 city" src="/wwwroot/images/city-ankara.webp" alt="">
+                                </picture>
+                            </figure>
+                            <figcaption class="d-flex position-absolute top-0 left-0 bottom-0 align-items-end">
+                                <span class="bg-white px-3 py-2 m-2 city-name">Ankara</span>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 city-box">
+                        <a href="" class="d-block position-relative">
+                            <figure class="d-flex position-relative m-0">
+                                <picture>
+                                    <img class="img-fluid rounded-4 city" src="/wwwroot/images/city-antalya.webp"
+                                        alt="">
+                                </picture>
+                            </figure>
+                            <figcaption class="d-flex position-absolute top-0 left-0 bottom-0 align-items-end">
+                                <span class="bg-white px-3 py-2 m-2 city-name">Antalya</span>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 city-box">
+                        <a href="" class="d-block position-relative">
+                            <figure class="d-flex position-relative m-0">
+                                <picture>
+                                    <img class="img-fluid rounded-4 city" src="/wwwroot/images/city-bursa.webp" alt="">
+                                </picture>
+                            </figure>
+                            <figcaption class="d-flex position-absolute top-0 left-0 bottom-0 align-items-end">
+                                <span class="bg-white px-3 py-2 m-2 city-name">Bursa</span>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 city-box">
+                        <a href="" class="d-block position-relative">
+                            <figure class="d-flex position-relative m-0">
+                                <picture>
+                                    <img class="img-fluid rounded-4 city" src="/wwwroot/images/city-istanbul.webp"
+                                        alt="">
+                                </picture>
+                            </figure>
+                            <figcaption class="d-flex position-absolute top-0 left-0 bottom-0 align-items-end">
+                                <span class="bg-white px-3 py-2 m-2 city-name">İstanbul</span>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 city-box">
+                        <a href="" class="d-block position-relative">
+                            <figure class="d-flex position-relative m-0">
+                                <picture>
+                                    <img class="img-fluid rounded-4 city" src="wwwroot/images/city-izmir.webp" alt="">
+                                </picture>
+                            </figure>
+                            <figcaption class="d-flex position-absolute top-0 left-0 bottom-0 align-items-end">
+                                <span class="bg-white px-3 py-2 m-2 city-name">İzmir</span>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 
