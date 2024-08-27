@@ -127,6 +127,10 @@
             background-color: #CD0042;
         }
 
+        #cities {
+            transform: translateY(-35%);
+        }
+
         .city-box {
             width: 310px;
         }
@@ -141,6 +145,16 @@
             border-radius: 8px;
             color: #333333;
             font-size: 18px;
+        }
+
+        #app-download-section {
+            transform: translateY(-8%);
+        }
+
+        .qr-code {
+            object-fit: cover;
+            height: auto;
+            width: 72px;
         }
     </style>
 
@@ -195,7 +209,7 @@
             </section>
         </div>
 
-        <section class="p-0 w-100">
+        <section class="w-100" style="padding: 0 0 80px;">
             <div id="partners-heading" class="container-fluid">
                 <h2 class="fw-semibold">Restoran veya Mahalle esnafı iş ortağımız olun</h2>
             </div>
@@ -229,7 +243,7 @@
             </div>
         </section>
 
-        <section id="cities" class="p-0 w-100">
+        <section id="cities" class="w-100">
             <div id="city-header" class="container-fluid">
                 <div>
                     <div>
@@ -305,6 +319,67 @@
                 </div>
             </div>
         </section>
+
+        <section id="app-download-section" class="w-100" style="transform: translateY(-27%);">
+            <div class="container-fluid p-0">
+                <div class="row" style="max-width: 1440px; padding: 0 64px; margin: auto; height: 100%;">
+                    <div class="p-0">
+                        <h2 style="margin-bottom: 32px;" class="fw-semibold">Mobil uygulamamızı indirin
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="container" style="max-width: 1440px; padding: 0 64px; margin: auto; height: 100%;">
+                    <div class="row m-0 p-0 rounded-4 h-auto" style="background-color: #EA004B;">
+                        <div class="col-6 p-0">
+                            <div class="container-fluid  text-white" style="padding: 48px 0 48px 32px;">
+                                <div class="row m-0">
+                                    <p class="h4 p-0" style="margin-bottom: 2rem;">Yemek ve market ihtiyaçlarının tamamı
+                                        için hemen indir!
+                                    </p>
+                                </div>
+                                <div class="row m-0 d-flex">
+                                    <div class="mb-4 d-flex p-0 gap-4">
+                                        <div class="p-2 rounded-2"
+                                            style="width: 88px; height: 88px; border: 1px solid white;">
+                                            <img src="/wwwroot/images/trhomepage-qrcode.png" class="qr-code"
+                                                alt="qr-code">
+                                        </div>
+                                        <p style="max-width: 344px;">Yemek, hızlı market ya da çevredeki esnaflardan tüm
+                                            ihtiyaçların dakikalar
+                                            içinde
+                                            kapında. Yemeksepeti’ni indir, sepetini oluşturup siparişini ver, online ya
+                                            da
+                                            kapıda dilediğin gibi öde.</p>
+                                    </div>
+                                </div>
+                                <div class="m-0 d-flex flex-row justify-content-start gap-3">
+                                    <a class="p-0" href=""><img src="/wwwroot/images/Download_on_the_AppStore_N.png"
+                                            alt=""></a>
+                                    <a class="p-0" href=""><img src="/wwwroot/images/GetItOnGooglePlay_N.png"
+                                            alt=""></a>
+                                    <a class="p-0" href=""><img src="/wwwroot/images/app-huawei-app-gallery.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <div class="position-relative">
+                                <picture class="position-absolute" style="transform: translateY(-18%);">
+                                    <img class="img-fluid" src="/wwwroot/images/home-yemeksepeti-app.webp" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
     </div>
 
 
