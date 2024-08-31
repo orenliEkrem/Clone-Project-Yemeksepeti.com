@@ -8,207 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Yemeksepeti - Online Yemek Siparişi ve Paket Servis</title>
-
-
-    <style>
-        div#header-container {
-            width: 100%;
-            z-index: 1;
-            background: white;
-        }
-
-        #site-header {
-            max-width: 1440px;
-            padding: 0 64px;
-        }
-
-        #header-nav {
-            height: 64px;
-        }
-
-        nav a {
-            height: 35px;
-            width: 35px;
-            margin: 0;
-            padding: 0;
-            border-radius: 50%;
-            box-sizing: border-box;
-        }
-
-        #site-logo {
-            height: 30px;
-        }
-
-        #shopping-bag {
-            padding: auto;
-            height: 19px;
-
-        }
-
-        #nav-list {
-            height: 30px;
-            font-size: 1em;
-        }
-
-        #nav-list li {
-            border: 0.8px solid black;
-            padding: 5px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.2s ease-in-out;
-        }
-
-        #nav-list li:hover,
-        #shopping-bag-link:hover {
-            transform: scale(1.1);
-            background-color: #f3f3f3;
-        }
-
-        li span img {
-            height: 19px;
-        }
-
-        #main-hero-container {
-            background-color: #f7f7f7;
-        }
-
-        #main-hero {
-            max-width: 1440px;
-            padding: 0 64px;
-
-        }
-
-        #hero-left-col {
-            box-sizing: border-box;
-            margin-right: 1em;
-        }
-
-        #hero-img {
-            max-height: 608px;
-            width: auto;
-            height: 100%;
-        }
-
-        #partners-heading,
-        #partners-msg,
-        #city-container,
-        #city-header {
-            max-width: 1440px;
-            padding: 0 64px;
-        }
-
-        #partners-heading h2 {
-            margin: 5rem 0 2rem;
-        }
-
-        #partners-msg {
-            transform: translateY(-47%);
-        }
-
-        #partners-msg div a {
-            padding: 12px 16px;
-            color: white;
-        }
-
-        #partners-img {
-            object-fit: cover;
-            width: 100%;
-            height: 404px;
-        }
-
-        #partners-link {
-            transition: all 0.2s ease-in-out;
-        }
-
-        #partners-link:hover {
-            transform: scale(1.1);
-            background-color: #CD0042;
-        }
-
-        #cities {
-            transform: translateY(-35%);
-        }
-
-        .city-box {
-            width: 310px;
-        }
-
-        .city {
-            object-fit: cover;
-            height: 252px;
-            width: 310px;
-        }
-
-        .city-name {
-            border-radius: 8px;
-            color: #333333;
-            font-size: 18px;
-        }
-
-        #app-download-section {
-            transform: translateY(-8%);
-        }
-
-        .qr-code {
-            object-fit: cover;
-            height: auto;
-            width: 72px;
-        }
-
-        #mutfaklar a {
-            text-decoration: none;
-            color: rgb(51, 51, 51);
-            font-weight: 600;
-        }
-
-        #mutfaklar-liste li {
-            margin-bottom: 8px;
-        }
-
-        #other-cities li {
-            padding: 0;
-            display: flex;
-            box-sizing: border-box;
-            margin-bottom: 8px;
-            text-decoration: none;
-            color: rgb(51, 51, 51);
-            font-weight: 600;
-        }
-
-        #contact li {
-            box-sizing: border-box;
-            list-style: none;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        @media (min-width: 2560px) {
-            #exmp {}
-        }
-
-        @media (min-width: 1920px) {
-            body {}
-        }
-
-        @media (min-width: 1264px) {
-            body {}
-        }
-
-        @media (min-width: 960px) {
-            body {}
-        }
-
-        @media (max-width: 768px) {
-            body {}
-        }
-
-        @media (max-width: 528px) {
-            body {}
-        }
-    </style>
 
 </head>
 
@@ -216,34 +17,37 @@
 
     <div id="header-container" class="shadow d-flex m-0 p-0 text-center sticky-top">
         <header id="site-header" class="container-fluid">
-            <nav id="header-nav" class="navbar container-fluid d-flex navbar-expand p-0">
-                <a class="me-auto p-0 justify-content-center align-items-center" href=""><img id="site-logo"
-                        src="wwwroot/images/Yemeksepeti.jpg" alt="yemeksepeti-logo"></a>
+            <nav id="header-nav" class="navbar navbar-expand-lg d-flex container-fluid p-0">
+                <a id="site-logo-link" class="me-auto p-0 justify-content-center align-items-center" href=""><img
+                        id="site-logo" src="wwwroot/images/Yemeksepeti.jpg" alt="yemeksepeti-logo"></a>
                 <ul id="nav-list" class="navbar-nav justify-content-center align-items-center gap-4 me-4">
                     <li class="nav-item">Giriş Yap</li>
                     <li class="nav-item bg-danger text-white border-0">Kayıt Ol</li>
-                    <li class="nav-item border-0 px-2"><span><img src="wwwroot/images/globe.png" alt=""></span> TR
+                    <li class="nav-item border-0 px-2"><span><img src="wwwroot/images/globe.png" alt=""></span>
+                        TR
                         <span><img src="/wwwroot/images/chevron.png" alt=""></span>
                     </li>
                 </ul>
+
                 <a id="shopping-bag-link" href="" class="me-2"><img id="shopping-bag"
                         src="/wwwroot/images/shopping-bag.png" alt=""></a>
-            </nav>
-        </header>
+    </div>
+    </nav>
+    </header>
     </div>
 
     <div id="main">
         <div id="main-hero-container">
             <section id="main-hero" class="container">
                 <div class="row m-0 row-cols-2">
-                    <div id="hero-left-col" class="col p-0 m-0 align-content-center">
+                    <div id="hero-left-col" class="col-7 p-0 m-0 align-content-center">
                         <div class="col">
                             <h1 class="fs-40 fw-normal lh-base">Yemek ya da
                                 market, tüm ihtiyaçların kapında!</h1>
                             <div class="p-3 rounded-4 w-auto bg-white shadow-sm mt-4">
                                 <div class="gap-3 d-flex position-relative">
-                                    <input class="w-100 rounded-2 p-2 border border-light-subtle" type="search" name=""
-                                        id="" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1">
+                                    <input class="w-100 rounded-2 p-2 border border-light-subtle" type="text"
+                                        id="autocomplete" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1" />
                                     <div class="d-flex position-absolute p-2 end-0 gap-2" style="margin-right: 15%;">
                                         <span><img src="/wwwroot/images/target.png" alt=""></span>
                                         <span class="fw-semibold p-1" style="font-size: 0.9rem;">Konumumu bul</span>
@@ -253,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col p-0 m-0">
+                    <div class="col-5 p-0 m-0">
                         <img id="hero-img" src="/wwwroot/images/hero-home.webp" alt="">
                     </div>
                 </div>
@@ -304,9 +108,9 @@
                 </div>
             </div>
             <div id="city-container" class="container-fluid">
-                <div class="row m-0 gap-4">
-                    <div class="col-3 p-0 city-box">
-                        <a href="" class="d-block position-relative ">
+                <div class="row row-cols-4 m-0">
+                    <div class="col p-0 city-box">
+                        <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
                                     <img class="img-fluid rounded-4 city" src="/wwwroot/images/city-ankara.webp" alt="">
@@ -317,7 +121,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col-3 p-0 city-box">
+                    <div class="col p-0 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -330,7 +134,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col-3 p-0 city-box">
+                    <div class="col p-0 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -342,7 +146,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col-3 p-0 city-box">
+                    <div class="col p-0 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -355,7 +159,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col-3 p-0 city-box">
+                    <div class="col p-0 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -785,7 +589,11 @@
         </div>
     </div>
 
+    <script src="wwwroot/scripts.js"></script>
 
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAHw4b8LJ1W9Eg32Ozetn_dKmMQdIH5mI&loading=async&libraries=places&callback=initAutocomplete"
+        async defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
