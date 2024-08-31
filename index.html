@@ -18,53 +18,61 @@
     <div id="header-container" class="shadow d-flex m-0 p-0 text-center sticky-top">
         <header id="site-header" class="container-fluid">
             <nav id="header-nav" class="navbar navbar-expand-lg d-flex container-fluid p-0">
-                <a id="site-logo-link" class="me-auto p-0 justify-content-center align-items-center" href=""><img
-                        id="site-logo" src="wwwroot/images/Yemeksepeti.jpg" alt="yemeksepeti-logo"></a>
-                <ul id="nav-list" class="navbar-nav justify-content-center align-items-center gap-4 me-4">
-                    <li class="nav-item">Giriş Yap</li>
-                    <li class="nav-item bg-danger text-white border-0">Kayıt Ol</li>
-                    <li class="nav-item border-0 px-2"><span><img src="wwwroot/images/globe.png" alt=""></span>
-                        TR
-                        <span><img src="/wwwroot/images/chevron.png" alt=""></span>
-                    </li>
-                </ul>
-
-                <a id="shopping-bag-link" href="" class="me-2"><img id="shopping-bag"
-                        src="/wwwroot/images/shopping-bag.png" alt=""></a>
-    </div>
-    </nav>
-    </header>
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a id="site-logo-link" class=" p-0 justify-content-center align-items-center" href=""><img
+                            id="site-logo" src="wwwroot/images/Yemeksepeti.jpg" alt="yemeksepeti-logo"></a>
+                    <div class="collapse navbar-collapse justify-content-end align-items-center"
+                        id="navbarTogglerDemo03">
+                        <ul id="nav-list" class="navbar-nav  gap-4 me-4">
+                            <li class="nav-item">Giriş Yap</li>
+                            <li class="nav-item bg-danger text-white border-0">Kayıt Ol</li>
+                            <li class="nav-item border-0 px-2"><span><img src="wwwroot/images/globe.png" alt=""></span>
+                                TR
+                                <span><img src="/wwwroot/images/chevron.png" alt=""></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="shopping-bag-link" href="" class="me-2"><img id="shopping-bag"
+                            src="/wwwroot/images/shopping-bag.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
     </div>
 
     <div id="main">
         <div id="main-hero-container">
             <section id="main-hero" class="container">
-                <div class="row m-0 row-cols-2">
-                    <div id="hero-left-col" class="col-7 p-0 m-0 align-content-center">
+                <div class="row m-0 row-cols-2 d-flex container-fluid p-0">
+                    <div id="hero-left-col" class="col-lg-7 col-6 p-0 m-0 align-content-center">
                         <div class="col">
-                            <h1 class="fs-40 fw-normal lh-base">Yemek ya da
+                            <h1 id="location-header" class="fs-40 fw-normal lh-base">Yemek ya da
                                 market, tüm ihtiyaçların kapında!</h1>
-                            <div class="p-3 rounded-4 w-auto bg-white shadow-sm mt-4">
-                                <div class="gap-3 d-flex position-relative">
+                            <div id="location" class="row rounded-4 bg-white shadow-sm">
+                                <div class="col gap-3 d-flex position-relative p-0">
                                     <input class="w-100 rounded-2 p-2 border border-light-subtle" type="text"
                                         id="autocomplete" placeholder="Örneğin: Esentepe Dede Korkut Sk. No:28/1" />
                                     <div class="d-flex position-absolute p-2 end-0 gap-2" style="margin-right: 15%;">
                                         <span><img src="/wwwroot/images/target.png" alt=""></span>
                                         <span class="fw-semibold p-1" style="font-size: 0.9rem;">Konumumu bul</span>
                                     </div>
-                                    <button class="btn btn-danger">Keşfet</button>
                                 </div>
+                                <button id="find-location" class="col-2 btn btn-danger">Keşfet</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 p-0 m-0">
+                    <div class="col-lg-5 col-6 p-0 m-0">
                         <img id="hero-img" src="/wwwroot/images/hero-home.webp" alt="">
                     </div>
                 </div>
             </section>
         </div>
 
-        <section class="w-100" style="padding: 0 0 80px;">
+        <section id="partners-sec" class="w-100" style="padding: 0 0 80px;">
             <div id="partners-heading" class="container-fluid">
                 <h2 class="fw-semibold">Restoran veya Mahalle esnafı iş ortağımız olun</h2>
             </div>
@@ -74,7 +82,7 @@
                 </picture>
             </div>
             <div id="partners-msg" class="container-fluid">
-                <div class="col-6 p-4 rounded-4 bg-white shadow">
+                <div class="col-12 col-lg-8 col-xl-6 p-4 rounded-4 bg-white shadow">
                     <p class="h4 fw-normal pb-3">Hemen katılın, Yemeksepeti ile satışlarınızı katlamaya başlayın</p>
                     <p class="pb-3">Binlerce yeni kullanıcıya ulaşabilmek ister misiniz? Sadece kendi semtinizdekiler
                         değil,
@@ -108,8 +116,8 @@
                 </div>
             </div>
             <div id="city-container" class="container-fluid">
-                <div class="row row-cols-4 m-0">
-                    <div class="col p-0 city-box">
+                <div class="row m-0 p-0">
+                    <div class="col-sm-6 col-lg-4 col-xl-3  p-2 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -121,7 +129,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col p-0 city-box">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -134,7 +142,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col p-0 city-box">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -146,7 +154,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col p-0 city-box">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
@@ -159,7 +167,7 @@
                             </figcaption>
                         </a>
                     </div>
-                    <div class="col p-0 city-box">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2 city-box">
                         <a href="" class="d-block position-relative">
                             <figure class="d-flex position-relative m-0">
                                 <picture>
