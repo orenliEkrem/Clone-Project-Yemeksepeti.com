@@ -28,10 +28,6 @@ div#header-container {
   height: 64px;
 }
 
-#navbarTogglerDemo03 {
-  background-color: #f3f3f3;
-}
-
 nav a {
   height: 35px;
   width: 35px;
@@ -189,6 +185,10 @@ li span img {
   margin-bottom: 16px;
 }
 
+#app-download-section {
+  transform: translateY(-27%);
+}
+
 @media (max-width: 1920px) {
   #main-hero-container {
     height: 608px;
@@ -230,18 +230,27 @@ li span img {
   }
   #location-header {
     font-size: 1.5rem;
-    margin: 3rem px 0 0;
+    margin: 3rem 0 0;
     padding: 0 20px;
   }
 
   #location {
+    padding: 10px;
     width: 100vw;
-    margin-top: 4em;
+    margin-top: 3em;
     background-color: #f7f7f7;
   }
   #find-location {
     display: block;
     width: 100vw;
+  }
+
+  #cities {
+    transform: translateY(-10%);
+  }
+
+  #app-download-section {
+    transform: translateY(0%);
   }
 }
 
@@ -249,10 +258,17 @@ li span img {
   #hero-img {
     height: 216px;
   }
+  #partners-sec {
+    transform: translateY(5%);
+  }
 }
 
 @media (max-width: 528px) {
   #hero-img {
     height: 148px;
+  }
+
+  #partners-sec {
+    transform: translateY(8%);
   }
 }
